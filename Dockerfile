@@ -1,6 +1,6 @@
-FROM python:3.7.0-alpine
+FROM python:3.8.12-alpine
 WORKDIR /project
 ADD . /project
-EXPOSE 5000
+WORKDIR /project
 RUN pip install -r requirements.txt
 CMD ["python","main.py"]
